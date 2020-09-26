@@ -1,0 +1,181 @@
+@charset "utf-8";
+@import url('fonts.css');
+
+/* 모바일 */
+*{padding:0; margin:0;}
+body {margin:0; font-family: 'KoreanSWGI1R','Noto Sans KR',"Helvetica Neue","Apple SD Gothic Neo", sans-serif; font-size:20px; font-weight: 500; line-height: 1.5; text-transform: uppercase; color:#fff;}
+em {font-family:'KoreanSWGI3R',sans-serif; font-style: normal;}
+strong {font-family:'KoreanSWGI4R',sans-serif; font-weight: normal;}
+span {font-family: 'Montserrat',sans-serif;}
+
+/* header */
+.container {background-color: #68a35f; display: flex; flex-direction: column;}
+.container header {background-color: #68a35f;}
+.container header > a {text-decoration: none; position:fixed; right:20px; bottom:20px; color:#fff; background: salmon; display:block; width:70px; height:70px; line-height: 70px; text-align: center; border-radius: 50%; z-index: 10;}
+.container header h1 {background: url(images/mobile_maintitle.png) no-repeat; background-position: 50% 35px; height:332px; text-indent: -9999px; margin: 0; padding:35px 0;}
+.container header .mainline {background-color: #fff; height:90px; color:#4c8a61; font-size: 17px; display: flex; justify-content: center; align-items: center;}
+.container header .bottxt ul {list-style:none; margin:0; padding:0; display: flex; justify-content: center; height: 100px;}
+.container header .bottxt ul li {width: 33.3333%; height:100%; text-align: center;}
+.container header .bottxt ul li a {text-decoration: none; color: #fff;  font-size:15px; display: block; width:100%; height: 100%; padding:20px 0 15px; box-sizing: border-box; background: url(images/arrow_white.png) no-repeat 50% 80%;}
+
+/* box1 스페셜 할인 쿠폰 */
+.container .box1 { height: 380px; display: flex; flex-direction: column; align-items: center;}
+/* title 모음 */
+.container .box1 .title1 p, .container .box2 .title2 p, .container .box3 .title3 p, .container .box4 .title4 p{margin:40px 0 35px; display: flex; justify-content: center;}
+.container .box3 .title3 p, .container .box4 .title4 p{padding-top:40px; margin:0;}
+.container .box1 .title1 p strong, .container .box2 .title2 p strong, .container .box3 .title3 p strong, .container .box4 .title4 p strong {font-size:30px;}
+.container .box1 .title1 span, .container .box2 .title2 p:first-child span, .container .box3 .title3 span,.container .box4 .title4 p span{display:none;}
+
+.container .box1 {background:#76d696 url(images/mobile_coupon.png) 59% 50% no-repeat;}
+/* box1+box2 유의사항 */
+.container .box1 .bottxt1 {margin:180px 0 40px;}
+.container .box1 .bottxt1 a,.container .box2 .bottxt2 a {font-family: 'Noto Sans KR', sans-serif; font-size: 15px; text-decoration: none; color:#000; border-bottom: 1px solid #000; padding-bottom: 8px;}
+.container .box1 .bottxt1 a img,.container .box2 .bottxt2 a img {width:10px; padding-left:10px;}
+
+/* box2 BEST추천템 */
+.container .box2 {background-color: #4c8a61; background-size: cover; position: relative; height:1783px;}
+.container .box2 .title2 p:first-child{margin-bottom:0;}
+.container .box2 .title2 p:nth-child(2){margin:15px 0 0; font-size: 14px;}
+.container .box2 .title2 p:nth-child(3) {font-size:14px; margin:0 0 25px;}
+.container .box2 .title2 .stone {position: absolute; top: 70px; right:0;}
+/* best1 + best2 +best3 */
+.container .item1, .container .item2, .container .item3 {display: flex; flex-direction: column; align-items: center; margin:auto; color:#000; min-width:330px; width: 88%; height: 390px; font-size:15px;margin-bottom: 75px;}
+.container .item2{word-spacing: -3px;}
+.container .item1 .best1 p:first-child, .container .item2 .best2 p:first-child, .container .item3 .best3 p:first-child {padding-bottom: 15px;}
+.container .item1 {background:#ffcb6f url(images/스누피밴드도시락.png) no-repeat 50% 65%;}
+.container .item2 {background: #ffa360 url(images/쿨러.png) no-repeat 50% 65%;}
+.container .item3 {background: #ffcb6f url(images/피크닉매트m.png) no-repeat 50% 65%;}
+.container .item1 .best1, .container .item2 .best2, .container .item3 .best3 {position: relative; display: flex; flex-flow: column; margin:40px 20px 0 20px; width: calc(100% - 40px);}
+.container .box2 .item1 .flower1 img, .container .box2 .item2 .flower2 img {display:none;}
+.container .item1 .best1 h2  {margin: 186px 0 0 0;}
+/* 분기점 best2, best3 */
+.container section section h2 {margin:0; text-align:right; font-size:17px;}
+.container .item2 .best2 h2 {margin-top:164px;}
+.container .item3 .best3 h2 {margin-top:186px;}
+
+.container .item1 .best1 h2 + p,.container .item3 .best3 h2 + p {margin-left: auto; font-size:22px; font-family: 'Noto Sans KR', sans-serif;}
+.container .item2 .best2 h2 + p {font-size:22px; font-family: 'Noto Sans KR', sans-serif; text-align: right; margin-bottom: 0;}
+.container .item1 .best1 h2+p span, .container .item2 .best2 h2+p span, .container .item3 .best3 h2+p span {font-size:39px;}
+.container .item1 .look, .container .item2 .look, .container .item3 .look{background-color: #306240; width:100%; height:52px; text-align: center;}
+.container .item1 .look a, .container .item2 .look a, .container .item3 .look a{text-decoration: none; color: #fff; font-size:20px; display: block; width:100%; height:100%; line-height: 52px;}
+.container .item1 a:last-child, .container .item2 a:last-child, .container .item3 a:last-child {display: none;}
+
+/* box2 min-width */
+.container .box2 > section {min-width:330px;}
+/* SHARE */
+.container .sharebox {width:88%; height:152px; background-color: #6cba84; display: flex; flex-direction: column; align-items: center; margin: 20px auto;}
+.container .sharebox p {margin:20px 0 15px 0;}
+.container .sharebox .sns {display: flex;}
+.container .sharebox .sns a {display:block; width:64px; height:64px;}
+.container .sharebox .sns a:first-child {margin-right:35px; background: url(images/mobkatalkicon.png) no-repeat 50% 10%;}
+.container .sharebox .sns a:last-child {background: url(images/mobfacebookicon.png) no-repeat center;}
+
+.container .bottxt2 {display: flex; justify-content: center; margin-bottom: 17px;}
+
+/* box3 인기브랜드 할인전 hot topic */
+.container .box3 {background-color: #447e58; height:660px;}
+.container .box3 .title3 {padding-bottom:40px;}
+.container .box3 section {display: flex; flex-direction: column; align-items: center;}
+.container .box3 section a { width:330px; height:235px; margin-bottom: 20px;}
+.container .box3 section a:first-child {background: url(images/모바일메이드파니.png) no-repeat center;}
+.container .box3 section a:last-child {background: url(images/모바일바투카.png) no-repeat center;}
+
+/* 랭킹 특가 */
+.container .box4 {background-color: #68a35f; color:#000;}
+.container .box4 .title4 {height: 105px; color: #fff;}
+.container .box4 .sell_info {background-color: #fff; padding:20px; list-style: none; display: flex; flex-direction: column; box-sizing:border-box;font-family: '맑은 고딕',sans-serif;}
+.container .box4 .sell_info li > a {display: block; min-width:120px; height:120px; background: url(images/mobile수저세트.png) no-repeat center;}
+.container .box4 .sell_info li:nth-child(2) > a { background-image: url(images/모바일보냉백.png);}
+.container .box4 .sell_info li:last-child > a { background-image: url(images/모바일보냉도시락.png);}
+.container .box4 .sell_info li {display: flex; align-items: center; border-bottom: 1px solid #ddd; cursor: pointer; padding-bottom:20px;}
+.container .box4 .sell_info li:last-child {border:0;}
+.container .box4 .sell_info .sell .info {margin-left: 20px; }
+.container .box4 .sell_info .sell .info .brand a { font-size:12px; text-decoration: none; color:#666666;}
+.container .box4 .sell_info .sell .info .product {font-size:13px; height:37.78px;}
+.container .box4 .sell_info .sell .info .price span:first-child {display: none;}
+.container .box4 .sell_info .sell .info .price span {font-size: 15px;}
+.container .box4 .sell_info .sell .info .price span:last-child {color:#f16667;}
+.container .box4 .sell_info .sell .info .etc {padding-top:5px;}
+.container .box4 .sell_info .sell .info .etc span {color:#fff; font-size: 11px; padding:4px;}
+.container .box4 .sell_info .sell .info .etc .dc {background-color: #ed6763;}
+.container .box4 .sell_info .sell .info .etc .fd {background-color: #488bc9;}
+.container .box4 .sell_info .sell .info .etc .md {background-color: #5ea645;}
+
+/**** tablet ****/
+@media screen and (min-width:768px) {
+    .container {min-width:1024px;}
+    .container header {display:flex; flex-direction:column; align-items: center;}
+    .container header h1 {width:1160px; height:650px;background: url(images/maintitle.png) center no-repeat; padding-bottom:100px;}
+    .container header .mainline {width:100%; font-size: 25px;}
+    .container header .bottxt {width:100%; height:170px;}
+    .container header .bottxt ul {margin:47px 20px;}
+    .container header .bottxt ul li a {font-size:25px; padding:0; height:100%; background-position:50% 100%; background-image: url(images/arrow_white1.png)}
+    .container header .bottxt ul li:last-child{border-right:1px solid #fff;}
+    .container header .bottxt ul li {border-left:1px solid #fff;}
+    .container header .bottxt, .container .box2 .item1, .container .box2 .item2, .container .box2 .item3, .container .sharebox,.container .box3 section, .container .box4 .sell_info {width:980px /*96.19%*/;}
+
+    .container .box1 {height:800px;justify-content: center; background:#76d696 url(images/coupon.png) 50% 55% no-repeat;}
+    .container .box1 .title1 span, .container .box2 .title2 p:first-child span, .container .box3 .title3 span, .container .box4 .title4 p span {display: block;}
+    .container .box1 .title1 p, .container .box2 .title2 p, .container .box3 .title3 p, .container .box4 .title4 p {display: flex; align-items:center;}
+    .container .box1 .title1 p strong, .container .box2 .title2 p strong, .container .box4 .title4 p strong {font-size:51px; padding:0 200px;}
+    .container .box3 .title3 p strong {font-size:51px; padding:0 185px; min-width:435px;}
+    .container .box1 .bottxt1 {margin-top:500px;}
+
+    .container .box2 {height:2330px; padding-top:70px; background: url(images/tbox2Bg.png) no-repeat; background-size: 100% 100%;}
+    .container .box2 .title2 p:nth-child(2),.container .box2 .title2 p:nth-child(3) {font-size:26px;}
+    .container .box2 .title2 p:nth-child(3){margin-bottom:30px;}
+
+    .container .box2 .item1, .container .box2 .item2, .container .box2 .item3 {height:435px; margin-bottom:125px;}
+    .container .box2 .item1 { background:#ffcb6f url(images/스누피밴드도시락web.png) no-repeat 10% 50%;}
+    .container .box2 .item2 {background: #ffa360 url(images/쿨러web.png) no-repeat 10% 50%;}
+    .container .box2 .item3 {background: #ffcb6f url(images/피크닉매트w.png) no-repeat 10% 50%;}
+    .container .box2 .item1 .best1,.container .box2 .item2 .best2, .container .box2 .item3 .best3{text-align:right; margin-left:auto; margin:80px 0 50px; width: 88%;}
+    .container .box2 .item1 .best1 p, .container .box2 .item2 .best2 p, .container .box2 .item3 .best3 p {font-size:25px;}
+    .container section section h2 {font-size:30px;}
+    .container .item1 .best1 h2 {margin-top:75px;}
+    .container .item2 .best2 h2 {margin-top: 38px;}
+    .container .item3 .best3 h2{margin-top: 75px;}
+    .container .item1 a:last-child, .container .item2 a:last-child, .container .item3 a:last-child {display: block; background-color: #68a35f;}
+    .container .item1 .look, .container .item2 .look, .container .item3 .look {display: flex;}
+    .container .item1 .look a, .container .item2 .look a, .container .item3 .look a {width:50%;}
+    .container .sharebox {flex-direction: row; justify-content: space-around; font-size: 29px; margin-bottom: 45px;}
+    .container .sharebox .sns a {width:92px; height: 92px;}
+    .container .sharebox .sns a:first-child {background: url(images/webkatalkicon.png) no-repeat 50% 10%;}
+    .container .sharebox .sns a:last-child {background-image: url(images/webfacebookicon.png);}
+    .container .box1 .bottxt1 a, .container .box2 .bottxt2 a {font-size:18px;}
+    .container .box2 .bottxt2{margin-bottom:90px;}
+    .container .box3 {padding-top:70px; height:670px;}
+    .container .box3 .title3 {padding-bottom:50px;}
+    /* hottopic */
+    .container .box3 section {flex-direction: column;}
+    .container .box3 section:first-child {margin:0 auto;}
+    .container .box3 section:last-child {flex-direction: row; justify-content: space-between; margin: 0 auto;}
+    .container .box3 section a { width:45.89%; height:370px;}
+    .container .box3 section a:first-child {background-image: url(images/webBox3메파.png);}
+    .container .box3 section a:last-child {background-image: url(images/webBox3바투카.png);}
+    .container .box4 {padding: 40px 0 80px; display:flex; flex-direction: column; justify-items: center; align-items: center;}
+    .container .box4 .title4 {padding-bottom:50px;}
+    .container .box4 .sell_info {width:88%; flex-direction: row;}
+    .container .box4 .sell_info li > a {min-width:250px; height:250px; background: url(images/수저세트.png) no-repeat center;}
+    .container .box4 .sell_info li:nth-child(2) a{background: url(images/보냉백.png);}
+    .container .box4 .sell_info li:last-child a {background: url(images/보냉도시락.png);}
+    .container .box4 .sell_info li {flex-direction: column; justify-items: center; width:33.3333%;}
+    .container .box4 .sell_info li {border:0;}
+    .container .box4 .sell_info .sell .info .price {margin-top: 20px;}
+    .container .box4 .sell_info .sell .info .price span {font-size:18px;}
+    .container .box4 .sell_info .sell .info .price span:first-child {display: block;text-decoration:line-through; font-size:12px; color:#666;}
+    .container .box4 .sell_info .sell .info .price span:last-child {font-size:25px;}
+}
+
+/**** pc버전 ****/
+@media screen and (min-width:1441px) {
+    .container header { position:relative; background: url(images/mainBg.png) no-repeat; background-size: cover;}
+    .container header .bottxt, .container .box2 .item1, .container .box2 .item2, .container .box2 .item3, .container .sharebox,.container .box3 section, .container .box4 .sell_info {max-width:980px;}
+    .container .box2 {background: url(images/box2Bg.png) no-repeat center; background-size: cover;}
+    .container .sharebox {max-width:980px;}
+    .container .box3 {display:flex; flex-direction: column; align-items:center; }
+    .container .box3 .title3 p strong {min-width: 435px;}
+    .container .box4 {background: url(images/박스4BG.png) no-repeat; background-size: 100% 100%;}
+    .container .box2 .item1 .flower1 img {display:block; position:absolute; top:535px; right:15%;}
+    .container .box2 .item2 .flower2 img {display:block; position:absolute; top:1160px; left:15%;}
+}
