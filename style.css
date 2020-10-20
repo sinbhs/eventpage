@@ -12,7 +12,7 @@ span {font-family: 'Montserrat',sans-serif;}
 .container {background-color: #68a35f; display: flex; flex-direction: column;}
 .container header {background-color: #68a35f;}
 .container header > a {text-decoration: none; position:fixed; right:20px; bottom:20px; color:#fff; background: salmon; display:block; width:70px; height:70px; line-height: 70px; text-align: center; border-radius: 50%; z-index: 10;}
-.container header h1 {background: url(images/mobile_maintitle.png) no-repeat; background-position: 50% 35px; background-size: 330px; height:332px; text-indent: -9999px; margin: 0; padding:35px 0;}
+.container header h1 {background: url(images/mobile_maintitle.svg) no-repeat; background-position: 50% 35px; background-size: 330px; height:332px; text-indent: -9999px; margin: 0; padding:35px 0;}
 .container header .mainline {background-color: #fff; height:90px; color:#4c8a61; font-size: 17px; display: flex; justify-content: center; align-items: center;}
 .container header .bottxt ul {list-style:none; margin:0; padding:0; display: flex; justify-content: center; height: 100px;}
 .container header .bottxt ul li {width: 33.3333%; height:100%; text-align: center;}
@@ -26,7 +26,7 @@ span {font-family: 'Montserrat',sans-serif;}
 .container .box1 .title1 p strong, .container .box2 .title2 p strong, .container .box3 .title3 p strong, .container .box4 .title4 p strong {font-size:30px;}
 .container .box1 .title1 span, .container .box2 .title2 p:first-child span, .container .box3 .title3 span,.container .box4 .title4 p span{display:none;}
 
-.container .box1 {background:#76d696 url(images/mobile_coupon.png) 59% 50% no-repeat;}
+.container .box1 {background:#76d696 url(images/mobile_coupon.svg) no-repeat center;}
 /* box1+box2 유의사항 */
 .container .box1 .bottxt1 {margin:180px 0 40px;}
 .container .box1 .bottxt1 a,.container .box2 .bottxt2 a {font-family: 'Noto Sans KR', sans-serif; font-size: 15px; text-decoration: none; color:#000; border-bottom: 1px solid #000; padding-bottom: 8px;}
@@ -67,8 +67,8 @@ span {font-family: 'Montserrat',sans-serif;}
 .container .sharebox p {margin:20px 0 15px 0;}
 .container .sharebox .sns {display: flex;}
 .container .sharebox .sns a {display:block; width:64px; height:64px;}
-.container .sharebox .sns a:first-child {margin-right:35px; background: url(images/mobkatalkicon.png) no-repeat 50% 10%;}
-.container .sharebox .sns a:last-child {background: url(images/mobfacebookicon.png) no-repeat center;}
+.container .sharebox .sns a:first-child {margin-right:35px; background: url(images/mobkatalkicon.svg) no-repeat center;}
+.container .sharebox .sns a:last-child {background: url(images/mobfacebookicon.svg) no-repeat center;}
 
 .container .bottxt2 {display: flex; justify-content: center; margin-bottom: 17px;}
 
