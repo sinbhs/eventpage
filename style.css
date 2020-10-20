@@ -11,7 +11,7 @@ span {font-family: 'Montserrat',sans-serif;}
 /* header */
 .container {background-color: #68a35f; display: flex; flex-direction: column;}
 .container header {background-color: #68a35f;}
-.container header > a {text-decoration: none; position:fixed; right:20px; bottom:20px; color:#fff; background: salmon; display:block; width:70px; height:70px; line-height: 70px; text-align: center; border-radius: 50%; z-index: 10;}
+
 .container header h1 {background: url(images/mobile_maintitle.svg) no-repeat; background-position: 50% 35px; background-size: 330px; height:332px; text-indent: -9999px; margin: 0; padding:35px 0;}
 .container header .mainline {background-color: #fff; height:90px; color:#4c8a61; font-size: 17px; display: flex; justify-content: center; align-items: center;}
 .container header .bottxt ul {list-style:none; margin:0; padding:0; display: flex; justify-content: center; height: 100px;}
@@ -101,6 +101,8 @@ span {font-family: 'Montserrat',sans-serif;}
 .container .box4 .sell_info .sell .info .etc .fd {background-color: #488bc9;}
 .container .box4 .sell_info .sell .info .etc .md {background-color: #5ea645;}
 
+/* scrollTop */
+.scrollTop {text-decoration: none; position:fixed; right:20px; bottom:20px; color:#fff; background: salmon; display:block; width:70px; height:70px; line-height: 70px; text-align: center; border-radius: 50%; z-index: 10;}
 /**** tablet ****/
 @media screen and (min-width:768px) {
     .container {min-width:1024px;}
