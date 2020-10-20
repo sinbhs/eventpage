@@ -1,11 +1,11 @@
-# Eventpage
-**Portfolio Work** - **Design &amp; develop responsive eventpage** website (design&amp;develop)
+# Eventpage promotion page
+**Portfolio Work** - **Design &amp; develop responsive eventpage promotion** website (design&amp;develop)
 
 *designed & developed by jwSong*
 
 ### About this repository
-- 이곳은 포트폴리오 작업물인 반응형 이벤트 페이지 문서 저장소입니다.
-- 본 사이트는 상업적 용도가 아닌 **포트폴리오 목적**으로 리뉴얼 제작된 사이트이며 일부 이미지와 문구등의 저작권은 1300k에 있음을 알립니다.
+- 이곳은 포트폴리오 작업물인 반응형 이벤트 홍보 페이지 문서 저장소입니다.
+- 본 사이트는 상업적 용도가 아닌 **포트폴리오 목적**으로 제작된 사이트이며 일부 이미지와 문구등의 저작권은 1300k에 있음을 알립니다.
 
 ### Website Structure
 - Index (event page) : 반응형(mobile, tablet, pc) 이벤트 페이지입니다.
