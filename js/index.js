@@ -16,7 +16,7 @@ $(function(){
             $('html').stop().animate({scrollTop:sectionDistance});
         }
         var sectionDistance = section.offset().top;
-        $('html').stop().animate({scrollTop:sectionDistance});
+        $('html').stop().animate({scrollTop:sectionDistance},500);
     });
 
     //scrollTop scroll event 스크롤 이벤트 - 헤더 높이 조정, top버튼 등장
