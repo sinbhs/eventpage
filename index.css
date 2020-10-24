@@ -44,26 +44,26 @@ a {text-decoration: none;}
 /* notice info */
 .container .box1 .bot_txt1 .notice_cont, .container .box2 .bot_txt2 .event_cont {position: absolute; left:0; top:35px; z-index: 3; font-family: 'Noto Sans KR',"Helvetica Neue","Apple SD Gothic Neo", sans-serif; font-weight: 400; color:#000; padding:4vw 0; margin:0vw 2vw; font-size: 14px; display: none;}
 .container .box1.on .bot_txt1 .notice_cont, .container .box2.on .bot_txt2 .event_cont {display: block;}
-.container .box1.on {height: 600px;}
-.container .box2.on {height: 1960px;}
+.container .box1.on {height: 630px;}
+.container .box2.on {height: 2180px;}
 .container .box1 .bot_txt1 .notice_cont li, .container .box2 .bot_txt2 .event_cont li {padding:0 0 1vw 3vw;}
 .container .box1 .bot_txt1 .notice_cont li:first-child, .container .box2 .bot_txt2 .event_cont li:first-child {display: none;}
 
 /* box2 BEST Items */
-.container .box2 {background-color: #4c8a61; background-size: cover; position: relative; height:1783px;}
+.container .box2 {background-color: #4c8a61; background-size: cover; position: relative;}
 .container .box2 .title2 p:first-child{margin-bottom:0;}
 .container .box2 .title2 p:nth-child(2){margin:15px 0 0; font-size: 14px;}
 .container .box2 .title2 p:nth-child(3) {font-size:14px; margin:0 0 25px;}
 .container .box2 .title2 .stone {position: absolute; top: 70px; right:0;}
 
 /* best1 + best2 +best3 */
-.container .item1, .container .item2, .container .item3 {display: flex; flex-direction: column; align-items: center; margin:auto; color:#000; min-width:330px; width: 88%; height: 390px; font-size:15px;margin-bottom: 75px;}
+.container .item1, .container .item2, .container .item3 {display: flex; flex-direction: column; align-items: center; margin:auto; color:#000; min-width:330px; width: 88%; font-size:15px;margin-bottom: 75px;}
 .container .item2{word-spacing: -3px;}
 .container .item1 .best1 p:first-child, .container .item2 .best2 p:first-child, .container .item3 .best3 p:first-child {padding-bottom: 15px;}
-.container .item1 {background:#ffcb6f url(images/스누피밴드도시락.png) no-repeat 50% 65%;}
-.container .item2 {background: #ffa360 url(images/쿨러.png) no-repeat 50% 65%;}
-.container .item3 {background: #ffcb6f url(images/피크닉매트m.png) no-repeat 50% 65%;}
-.container .item1 .best1, .container .item2 .best2, .container .item3 .best3 {position: relative; display: flex; flex-flow: column; margin:40px 20px 0 20px; width: calc(100% - 40px);}
+.container .item1 {background:#ffcb6f url(images/스누피밴드도시락.png) no-repeat center;}
+.container .item2 {background: #ffa360 url(images/쿨러.png) no-repeat center;}
+.container .item3 {background: #ffcb6f url(images/피크닉매트m.png) no-repeat center;}
+.container .item1 .best1, .container .item2 .best2, .container .item3 .best3 {position: relative; display: flex; flex-flow: column; margin:40px 20px 10px 20px; width: calc(100% - 40px);}
 .container .box2 .item1 .flower1 img, .container .box2 .item2 .flower2 img {display:none;}
 .container .item1 .best1 h2  {margin: 186px 0 0 0;}
 
