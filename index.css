@@ -8,10 +8,12 @@ body {margin:0; font-family: 'KoreanSWGI1R','Noto Sans KR',"Helvetica Neue","App
 em {font-family:'KoreanSWGI3R',sans-serif; font-style: normal;}
 strong {font-family:'KoreanSWGI4R',sans-serif; font-weight: normal;}
 span {font-family: 'Montserrat',sans-serif;}
+ul {list-style: none; margin:0; padding:0;}
+a {text-decoration: none;}
 
 /**** Mobile ****/
 /* header */
-.container {background-color: #68a35f; display: flex; flex-direction: column;}
+.container {width: 100%; background-color: #68a35f; display: flex; flex-direction: column; overflow: hidden;}
 .container header {background-color: #68a35f;}
 .container header h1 {background: url(images/mobile_maintitle.svg) no-repeat; background-position: 50% 35px; background-size: 330px; height:332px; text-indent: -9999px; margin: 0; padding:35px 0;}
 .container header .main_line {background-color: #fff; height:90px; color:#4c8a61; font-size: 17px; display: flex; justify-content: center; align-items: center;}
@@ -26,13 +28,26 @@ span {font-family: 'Montserrat',sans-serif;}
 .container .box1 .title1 span, .container .box2 .title2 p:first-child span, .container .box3 .title3 span,.container .box4 .title4 p span{display:none;}
 
 /* box1 Special Sale Coupon */
-.container .box1 { height: 380px; display: flex; flex-direction: column; align-items: center;}
-.container .box1 {background:#76d696 url(images/mobile_coupon.svg) no-repeat center;}
+.container .box1 { height: auto; display: flex; flex-direction: column; align-items: center;}
+.container .box1 {background-color:#76d696;}
+
+/* box1 coupon img */
+.container .box1 .coupon {width:100%; height:205px; background: url(images/mobile_coupon.svg) no-repeat center;}
 
 /* box1+box2 Notice */
-.container .box1 .bot_txt1 {margin:180px 0 40px;}
-.container .box1 .bot_txt1 a,.container .box2 .bot_txt2 a {font-family: 'Noto Sans KR', sans-serif; font-size: 15px; text-decoration: none; color:#000; border-bottom: 1px solid #000; padding-bottom: 8px;}
+
+/* notice btn */
+.container .box1 .bot_txt1, .container .box2 .bot_txt2 {width: 100%; margin:20px 0 40px; position: relative; display: flex; justify-content: center;}
+.container .box1 .bot_txt1 a,.container .box2 .bot_txt2 a {font-family: 'Noto Sans KR',"Helvetica Neue","Apple SD Gothic Neo", sans-serif; font-size: 15px; text-decoration: none; color:#000; border-bottom: 1px solid #000; padding-bottom: 8px;}
 .container .box1 .bot_txt1 a img,.container .box2 .bot_txt2 a img {width:10px; padding-left:10px;}
+
+/* notice info */
+.container .box1 .bot_txt1 .notice_cont, .container .box2 .bot_txt2 .event_cont {position: absolute; left:0; top:35px; z-index: 3; font-family: 'Noto Sans KR',"Helvetica Neue","Apple SD Gothic Neo", sans-serif; font-weight: 400; color:#000; padding:4vw 0; margin:0vw 2vw; font-size: 14px; display: none;}
+.container .box1.on .bot_txt1 .notice_cont, .container .box2.on .bot_txt2 .event_cont {display: block;}
+.container .box1.on {height: 600px;}
+.container .box2.on {height: 1960px;}
+.container .box1 .bot_txt1 .notice_cont li, .container .box2 .bot_txt2 .event_cont li {padding:0 0 1vw 3vw;}
+.container .box1 .bot_txt1 .notice_cont li:first-child, .container .box2 .bot_txt2 .event_cont li:first-child {display: none;}
 
 /* box2 BEST Items */
 .container .box2 {background-color: #4c8a61; background-size: cover; position: relative; height:1783px;}
@@ -40,6 +55,7 @@ span {font-family: 'Montserrat',sans-serif;}
 .container .box2 .title2 p:nth-child(2){margin:15px 0 0; font-size: 14px;}
 .container .box2 .title2 p:nth-child(3) {font-size:14px; margin:0 0 25px;}
 .container .box2 .title2 .stone {position: absolute; top: 70px; right:0;}
+
 /* best1 + best2 +best3 */
 .container .item1, .container .item2, .container .item3 {display: flex; flex-direction: column; align-items: center; margin:auto; color:#000; min-width:330px; width: 88%; height: 390px; font-size:15px;margin-bottom: 75px;}
 .container .item2{word-spacing: -3px;}
@@ -50,12 +66,13 @@ span {font-family: 'Montserrat',sans-serif;}
 .container .item1 .best1, .container .item2 .best2, .container .item3 .best3 {position: relative; display: flex; flex-flow: column; margin:40px 20px 0 20px; width: calc(100% - 40px);}
 .container .box2 .item1 .flower1 img, .container .box2 .item2 .flower2 img {display:none;}
 .container .item1 .best1 h2  {margin: 186px 0 0 0;}
+
 /* best2, best3 */
 .container section section h2 {margin:0; text-align:right; font-size:17px;}
 .container .item2 .best2 h2 {margin-top:164px;}
 .container .item3 .best3 h2 {margin-top:186px;}
-.container .item1 .best1 h2 + p,.container .item3 .best3 h2 + p {margin-left: auto; font-size:22px; font-family: 'Noto Sans KR', sans-serif;}
-.container .item2 .best2 h2 + p {font-size:22px; font-family: 'Noto Sans KR', sans-serif; text-align: right; margin-bottom: 0;}
+.container .item1 .best1 h2 + p,.container .item3 .best3 h2 + p {margin-left: auto; font-size:22px; font-family: 'Noto Sans KR',"Helvetica Neue","Apple SD Gothic Neo", sans-serif;}
+.container .item2 .best2 h2 + p {font-size:22px; font-family: 'Noto Sans KR',"Helvetica Neue","Apple SD Gothic Neo", sans-serif; text-align: right; margin-bottom: 0;}
 .container .item1 .best1 h2+p span, .container .item2 .best2 h2+p span, .container .item3 .best3 h2+p span {font-size:39px;}
 .container .item1 .look, .container .item2 .look, .container .item3 .look{background-color: #306240; width:100%; height:52px; text-align: center;}
 .container .item1 .look a, .container .item2 .look a, .container .item3 .look a{text-decoration: none; color: #fff; font-size:20px; display: block; width:100%; height:100%; line-height: 52px;}
@@ -76,10 +93,10 @@ span {font-family: 'Montserrat',sans-serif;}
 /* box3 Brand hot topic */
 .container .box3 {background-color: #447e58; height:660px;}
 .container .box3 .title3 {padding-bottom:40px;}
-.container .box3 section {display: flex; flex-direction: column; align-items: center;}
-.container .box3 section a { width:330px; height:235px; margin-bottom: 20px;}
-.container .box3 section a:first-child {background: url(images/모바일메이드파니.png) no-repeat center;}
-.container .box3 section a:last-child {background: url(images/모바일바투카.png) no-repeat center;}
+.container .box3 div {display: flex; flex-direction: column; align-items: center;}
+.container .box3 div a { width:330px; height:235px; margin-bottom: 20px;}
+.container .box3 div a:first-child {background: url(images/모바일메이드파니.png) no-repeat center;}
+.container .box3 div a:last-child {background: url(images/모바일바투카.png) no-repeat center;}
 
 /* Ranking Special Price */
 .container .box4 {background-color: #68a35f; color:#000;}
@@ -117,7 +134,7 @@ span {font-family: 'Montserrat',sans-serif;}
     .container header .bot_txt ul li a {font-size:25px; padding:0; height:100%; background-position:50% 100%; background-image: url(images/arrow_white1.png)}
     .container header .bot_txt ul li:last-child{border-right:1px solid #fff;}
     .container header .bot_txt ul li {border-left:1px solid #fff;}
-    .container header .bot_txt, .container .box2 .item1, .container .box2 .item2, .container .box2 .item3, .container .share_box,.container .box3 section, .container .box4 .sell_info {width:980px /*96.19%*/;}
+    .container header .bot_txt, .container .box2 .item1, .container .box2 .item2, .container .box2 .item3, .container .share_box,.container .box3 section, .box3 div, .container .box4 .sell_info {width:96.19%;}
 
     /* box1 Special Sale Coupon */
     .container .box1 {height:800px;justify-content: center; background:#76d696 url(images/coupon.png) 50% 55% no-repeat;}
@@ -126,6 +143,16 @@ span {font-family: 'Montserrat',sans-serif;}
     .container .box1 .title1 p strong, .container .box2 .title2 p strong, .container .box4 .title4 p strong {font-size:51px; padding:0 200px;}
     .container .box3 .title3 p strong {font-size:51px; padding:0 185px; min-width:435px;}
     .container .box1 .bot_txt1 {margin-top:500px;}
+
+    /* box1 coupon img */
+    .container .box1 .coupon {display: none;}
+
+    /* box1 coupon notice */
+    .container .box1.on {height: 800px;}
+    .container .box2.on {height: 2330px;}
+    .container .box1 .bot_txt1 .notice_cont, .container .box2 .bot_txt2 .event_cont {width:980px; letter-spacing: -0.3px; line-height: 25px; background-color: #fff; padding:40px; margin:0; box-sizing: border-box; top:63px; left: 50%; transform:translateX(-50%);}
+    .container .box1 .bot_txt1 .notice_cont li, .container .box2 .bot_txt2 .event_cont li {padding:0}
+    .container .box1 .bot_txt1 .notice_cont li:first-child, .container .box2 .bot_txt2 .event_cont li:first-child {display: block; font-weight: bold;}
 
     /* box2 BEST Items */
     .container .box2 {height:2330px; padding-top:70px; background: url(images/tbox2Bg.png) no-repeat; background-size: 100% 100%;}
@@ -158,12 +185,12 @@ span {font-family: 'Montserrat',sans-serif;}
     .container .box3 .title3 {padding-bottom:50px;}
 
     /* box3 Brand hot topic */
-    .container .box3 section {flex-direction: column;}
-    .container .box3 section:first-child {margin:0 auto;}
-    .container .box3 section:last-child {flex-direction: row; justify-content: space-between; margin: 0 auto;}
-    .container .box3 section a { width:45.89%; height:370px;}
-    .container .box3 section a:first-child {background-image: url(images/webBox3메파.png);}
-    .container .box3 section a:last-child {background-image: url(images/webBox3바투카.png);}
+    .container .box3 div {flex-direction: column;}
+    .container .box3 div:first-child {margin:0 auto;}
+    .container .box3 div:last-child {flex-direction: row; justify-content: space-between; margin: 0 auto;}
+    .container .box3 div a { width:45.89%; height:370px;}
+    .container .box3 div a:first-child {background-image: url(images/webBox3메파.png);}
+    .container .box3 div a:last-child {background-image: url(images/webBox3바투카.png);}
     .container .box4 {padding: 40px 0 80px; display:flex; flex-direction: column; justify-items: center; align-items: center;}
     .container .box4 .title4 {padding-bottom:50px;}
     .container .box4 .sell_info {width:88%; flex-direction: row;}
@@ -182,11 +209,13 @@ span {font-family: 'Montserrat',sans-serif;}
 @media screen and (min-width:1441px) {
     /* header */
     .container header { position:relative; background: url(images/mainBg.png) no-repeat; background-size: cover;}
-    .container header .bot_txt, .container .box2 .item1, .container .box2 .item2, .container .box2 .item3, .container .share_box,.container .box3 section, .container .box4 .sell_info {max-width:980px;}
+    .container header .bot_txt, .container .box2 .item1, .container .box2 .item2, .container .box2 .item3, .container .share_box,.container .box3 section, .container .box3 div, .container .box4 .sell_info {max-width:980px;}
+
     /* box2 */
     .container .box2 {background: url(images/box2Bg.png) no-repeat center; background-size: cover;}
     /* share box */
     .container .share_box {max-width:980px;}
+
     /* box3 */
     .container .box3 {display:flex; flex-direction: column; align-items:center; }
     .container .box3 .title3 p strong {min-width: 435px;}
