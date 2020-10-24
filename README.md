@@ -8,7 +8,7 @@
 - 본 사이트는 상업적 용도가 아닌 **포트폴리오 목적**으로 제작된 사이트이며 일부 이미지와 문구등의 저작권은 1300k에 있음을 알립니다.
 
 ### Website Structure
-- Index (event page) : 반응형(mobile, tablet, pc) 이벤트 페이지입니다.
+- Index (event page) : 반응형(mobile, tablet, pc) 이벤트 홍보 페이지입니다.
 
 ### Contact
 - 함께 나누고 싶은 이야기가 있으시다면, 아래의 이메일로 연락주세요!
