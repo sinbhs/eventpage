@@ -4,40 +4,51 @@
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=Edge'>
         <meta name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no'>
-        <meta property="og:title" content="flexible eventpage">
-        <meta property="og:description" content="반응형 연습을 위한 플렉서블 웹 사이트 입니다.">
+        <meta name="description" content="즐거운 습관 1300k(천삼백케이)는 디자인 쇼핑몰로써 지금까지 없던 즐거운 쇼핑경험을 드립니다.">
+        <meta name="keywords" content="1300k, 천삼백케이, 브룬, BRUUN, 우리 오늘 피크닉 갈래? 피크닉을 위한 추천템">
+        <meta property="og:title" content="우리 오늘 피크닉 갈래? 피크닉을 위한 추천템">
+        <meta property="og:description" content="선선해진 날씨, 피크닉을 위한 준비물 할인 이벤트.">
         <meta property="og:url" content="http://sinbhs.github.io/eventpage/index.html">
-        <meta property="og:image" content="http://sinbhs.github.io/images/img.jpg">
+        <meta property="og:image" content="http://sinbhs.github.io/eventpage/images/og_img.jpg">
         <!-- twitter -->
-        <meta property="twitter:card" content="요약">
-        <meta property="twitter:title" content="플렉서블 웹">
+        <meta property="twitter:card" content="우리 오늘 피크닉 갈래? 피크닉을 위한 추천템">
+        <meta property="twitter:title" content="우리 오늘 피크닉 갈래? 피크닉을 위한 추천템">
         <meta property="twitter:url" content="http://sinbhs.github.io/eventpage/index.html">
-        <meta property="twitter:image" content="images/og_img.jpg">
-        <meta property="twitter:description" content="반응형 연습을 위한 플렉서블 웹 사이트 입니다.">
-        <title>이벤트 페이지</title>
+        <meta property="twitter:image" content="http://sinbhs.github.io/eventpage/images/og_img.jpg">
+        <meta property="twitter:description" content="선선해진 날씨, 피크닉을 위한 준비물 할인 이벤트.">
+        <title>우리 오늘 피크닉 갈래? 피크닉을 위한 추천템 :: 1300k 천삼백케이</title>
         <!-- css -->
-        <link rel="stylesheet" href="common/normalize.css">
         <!-- font -->
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
         <!-- favicon -->
-        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="style.css">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <!-- normalize -->
+        <link rel="stylesheet" href="common/normalize.css">
+        <link rel="stylesheet" href="index.css">
         <!-- js -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
         <script src="js/index.js"></script>
     </head>
 
     <body>
-        <!-- 시월구일3=em/시월구일1=p /시월구일4=strong/시월구일2=h2
-            mosterat Bold = span / -->
+        <!-- 시월구일3=em / 시월구일1=p / 시월구일4=strong / 시월구일2=h2 / mosterat Bold = span -->
+        <!-- container -->
         <div class="container">
+
+            <!-- header -->
             <header>
-                
+                <!-- main title -->
                 <h1>메인타이틀</h1>
-                <section class="mainline">
+                <!-- sub title -->
+                <section class="main_line">
                     <p><em>피크닉</em>을 위한 도시락, 보냉백, 피크닉 매트까지 !</p>
                 </section>
-                <section class="bottxt">
+                <!-- linked menu -->
+                <section class="bot_txt">
                     <ul>
                         <li><a href="#1">스페셜<br>할인 쿠폰</a></li>
                         <li><a href="#2">best<br>추천템</a></li>
@@ -46,21 +57,27 @@
                 </section>
             </header>
 
+            <!-- box1 - Coupon -->
             <div class="box1" id="1">
+                <!-- title1 - Special Sale Coupon -->
                 <section class="title1">
                     <p><span>#01　　　</span><strong>스페셜 할인 쿠폰</strong><span>coupon</span></p>
                 </section>
-                <section class="bottxt1">
+                <!-- notice -->
+                <section class="bot_txt1">
                     <a href="#">쿠폰 사용 시 유의사항<img src="images/arrow_view.png" alt="아래뷰"></a>
                 </section>
             </div>
 
+            <!-- box2 - Best Items -->
             <div class="box2" id="2">
+                <!-- title2 - Recommended Items -->
                 <section class="title2">
                     <p><span>#02　　　　　</span><strong>BEST 추천템</strong><span>　　market</span></p>
                     <p><span>1300k</span>에서 추천하는</p><p>피크닉 best 3</p>
                     <section class="stone"><img src="images/박스2조약돌.png" alt="조약돌"></section>
                 </section>
+                <!-- Best Item 1 -->
                 <section class="item1">
                     <section class="best1">
                         <p><em>스누피 다이컷 밴드 도시락</em></p>
@@ -73,6 +90,7 @@
                         <a href="#">상품 자세히 보기</a><a href="#">구매하러 가기</a>
                     </section>
                 </section>
+                <!-- Best Item 2 -->
                 <section class="item2">
                     <section class="best2">
                         <p><em>홀리데이랜드 쿨러(17L)</em></p>
@@ -85,6 +103,7 @@
                         <a href="#">상품 자세히 보기</a><a href="#">구매하러 가기</a>
                     </section>
                 </section>
+                <!-- Best Item 3 -->
                 <section class="item3">
                     <section class="best3">
                         <p><em>브루니 체크 피크닉 매트</em></p>
@@ -96,79 +115,88 @@
                         <a href="#">상품 자세히 보기</a><a href="#">구매하러 가기</a>
                     </section>
                 </section>
-                <section class="sharebox">
+                <!-- Share Box -->
+                <section class="share_box">
                     <p>이벤트 친구에게 공유하기</p>
                     <section class="sns">
                     <a href="#"></a>
                     <a href="#"></a>
                     </section>
                 </section>
-                <section class="bottxt2">
+                <section class="bot_txt2">
                     <a href="#">이벤트 유의사항<img src="images/arrow_view.png" alt="아래뷰"></a>
                 </section>
+            </div><!-- //box2 -->
 
-                <div class="box3">
-                    <section class="title3">
-                        <p><span>hot　　</span><strong>인기 브랜드 할인전</strong><span>　topic</span></p>
-                    </section>
-                    <section>
-                        <a href="#"></a>
-                        <a href="#"></a>
-                    </section>
-                </div>
-
-                <div class="box4" id="3">
-                    <section class="title4">
-                        <p><span>#03　　　　　　　</span><strong>랭킹 특가</strong><span>　　　　ranking</span></p>
-                    </section>
-
-                    <ul class="sell_info">
-                        <li class="sell">
-                            <a href="#"></a> 
-                            <div class="info">
-                                <p class="brand"><a href="#">스케이터코리아</a></p>
-                                <p class="product">스누피 우주비행사 소음방지 콤비세트 18CM</p>
-                                <p class="price">
-                                   <span>13,900원</span>
-                                   <span>10,420원</span>
-                                   <span>25%</span>
-                                </p>
-                               <p class="etc"><span class="dc">할인</span></p>
-                           </div>
-                        </li>
-                        
-                        <li class="sell">
-                            <a href="#"></a> 
-                            <div class="info">
-                                <p class="brand"><a href="#">스케이터코리아</a></p>
-                                <p class="product">스누피 라이프스타일 보냉 피크닉 가방(대)</p>
-                                <p class="price">
-                                   <span>23,000원</span>
-                                   <span>17,250원</span>
-                                   <span>25%</span>
-                                </p>
-                               <p class="etc">
-                                   <span class="fd">무료배송</span><span class="md">1300k배송</span><span class="dc">할인</span>
-                                </p>
-                           </div>
-                        </li>
-
-                        <li class="sell">
-                            <a href="#"></a>
-                            <div class="info">
-                                <p class="brand"><a href="#">스케이터코리아</a></p>
-                                <p class="product">[무료배송] 스누피 피너츠 라이프스타일 보냉 미니 도시락 320ML</p>
-                                <p class="price">
-                                   <span>14,000원</span>
-                                   <span>10,000원</span>
-                                   <span>29%</span>
-                                </p>
-                               <p class="etc"><span class="fd">무료배송</span><span class="dc">할인</span></p>
-                           </div>
-                        </li>
-                    </ul>
-                </div>
+            <!-- box3 - Brand Sale Zone -->
+            <div class="box3">
+                <!-- title3 - Brand Sale Zone -->
+                <section class="title3">
+                    <p><span>hot　　</span><strong>인기 브랜드 할인전</strong><span>　topic</span></p>
+                </section>
+                <!-- brand - 바투카, 메이드파니 -->
+                <section>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </section>
             </div>
+
+            <!-- box4 - Ranking Sale -->
+            <div class="box4" id="3">
+                <!-- title4 - Ranking Special Price -->
+                <section class="title4">
+                    <p><span>#03　　　　　　　</span><strong>랭킹 특가</strong><span>　　　　ranking</span></p>
+                </section>
+                <!-- products -->
+                <ul class="sell_info">
+                    <!-- products1 - 스누피 콤비세트 -->
+                    <li class="sell">
+                        <a href="#"></a> 
+                        <div class="info">
+                            <p class="brand"><a href="#">스케이터코리아</a></p>
+                            <p class="product">스누피 우주비행사 소음방지 콤비세트 18CM</p>
+                            <p class="price">
+                                <span>13,900원</span>
+                                <span>10,420원</span>
+                                <span>25%</span>
+                            </p>
+                            <p class="etc"><span class="dc">할인</span></p>
+                        </div>
+                    </li>
+                    <!-- products2 - 스누피 보냉 피크닉 가방 -->
+                    <li class="sell">
+                        <a href="#"></a> 
+                        <div class="info">
+                            <p class="brand"><a href="#">스케이터코리아</a></p>
+                            <p class="product">스누피 라이프스타일 보냉 피크닉 가방(대)</p>
+                            <p class="price">
+                                <span>23,000원</span>
+                                <span>17,250원</span>
+                                <span>25%</span>
+                            </p>
+                            <p class="etc">
+                                <span class="fd">무료배송</span><span class="md">1300k배송</span><span class="dc">할인</span>
+                            </p>
+                        </div>
+                    </li>
+                    <!-- products3 - 스누피 보냉 미니 도시락 -->
+                    <li class="sell">
+                        <a href="#"></a>
+                        <div class="info">
+                            <p class="brand"><a href="#">스케이터코리아</a></p>
+                            <p class="product">[무료배송] 스누피 피너츠 라이프스타일 보냉 미니 도시락 320ML</p>
+                            <p class="price">
+                               <span>14,000원</span>
+                               <span>10,000원</span>
+                               <span>29%</span>
+                            </p>
+                           <p class="etc"><span class="fd">무료배송</span><span class="dc">할인</span></p>
+                       </div>
+                    </li>
+                </ul>
+            </div><!-- //container -->
+            
+            <!-- scrollTop Button -->
             <a href="#" class="scrollTop">top</a>
         </div>
     </body>
