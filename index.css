@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url('fonts.css');
+@import url('fonts/fonts.css');
 
 /* basic */
 *{padding:0; margin:0;}
@@ -120,7 +120,7 @@ a {text-decoration: none;}
 .container .box4 .sell_info .sell .info .etc .md {background-color: #5ea645;}
 
 /* scrollTop */
-.scrollTop {text-decoration: none; position:fixed; right:20px; bottom:20px; color:#fff; background: salmon; display:block; width:70px; height:70px; line-height: 70px; text-align: center; border-radius: 50%; z-index: 10;}
+.scrollTop {text-decoration: none; position:fixed; right:20px; bottom:20px; color:#fff; background: salmon; display:block; width:70px; height:70px; font-family: 'Montserrat', sans-serif; line-height: 70px; text-align: center; border-radius: 50%; z-index: 10;}
 
 /**** tablet ****/
 @media screen and (min-width:768px) {
